@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf3fb"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:paddingBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/personalCabinet"
+            style="@style/textStyleInTopPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:text="Личный кабинет"
+            android:textSize="65px"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="-6dp">
+
+        </TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/white"
+            android:text="RUB"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/personalCabinet"
+            app:layout_constraintTop_toTopOf="@id/personalCabinet" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="113dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="110dp"
+            android:backgroundTint="@color/white"
+            android:text="Создать"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/personalCabinet"
+            app:layout_constraintTop_toTopOf="@id/personalCabinet" />
+
+        <Button
+            android:layout_width="131dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#E1EAF3"
+            android:text="Купить"
+            android:textColor="#75bbfd"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/topPanel"
+            app:layout_constraintStart_toStartOf="@id/topPanel" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/person"
+            app:layout_constraintStart_toStartOf="@id/topPanel"
+            app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+        <Button
+            android:layout_width="123dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#ffff"
+            android:text="Продать"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/topPanel"
+            app:layout_constraintStart_toStartOf="@id/topPanel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/middlePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topPanel">
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lines="7"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-200dp"
+        app:layout_constraintBottom_toBottomOf="@id/topPanel"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lines="7"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-360dp"
+        app:layout_constraintBottom_toBottomOf="@id/topPanel"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E1EAF3"
+        android:text="BNB"
+        android:textColor="#75bbfd"
+        android:textStyle="bold"
+        android:layout_marginStart="295dp"
+        android:layout_marginBottom="-30dp"
+        app:layout_constraintBottom_toBottomOf="@id/topPanel"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3B3BFF"
+        android:text="Купить"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_marginStart="295dp"
+        android:layout_marginBottom="-180dp"
+        app:layout_constraintBottom_toBottomOf="@id/topPanel"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3B3BFF"
+        android:text="Купить"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_marginStart="295dp"
+        android:layout_marginBottom="-340dp"
+        app:layout_constraintBottom_toBottomOf="@id/topPanel"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3B3BFF"
+        android:text="Купить"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_marginStart="295dp"
+        android:layout_marginBottom="-490dp"
+        app:layout_constraintBottom_toBottomOf="@id/topPanel"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffff"
+        android:text="BUSD"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="-30dp"
+        app:layout_constraintBottom_toBottomOf="@id/topPanel"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffff"
+        android:text="BTC"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="107dp"
+        android:layout_marginBottom="-30dp"
+        app:layout_constraintBottom_toBottomOf="@id/topPanel"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffff"
+        android:text="USDT"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="-30dp"
+        app:layout_constraintBottom_toBottomOf="@id/topPanel"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/man"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="390dp"
+        android:src="@drawable/man2"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="550dp"
+        android:src="@drawable/man3"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="340dp"
+        android:src="@drawable/sber"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/sber"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="660dp"
+        android:src="@drawable/sber"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="340dp"
+        android:src="@drawable/tink"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/tink"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="660dp"
+        android:src="@drawable/tink"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="336dp"
+        android:src="@drawable/alfa"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/alfa"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="660dp"
+        android:src="@drawable/alfa"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="232dp"
+        android:text="Bohdan K."
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="400dp"
+        android:text="Andrew A."
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="565dp"
+        android:text="Andrew A."
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="232dp"
+        android:text="Сделок"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="400dp"
+        android:text="Сделок"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="565dp"
+        android:text="Сделок"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="355dp"
+        android:layout_marginTop="235dp"
+        android:text="1345"
+        android:textColor="@color/black"
+        android:textSize="35px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="276dp"
+        android:text="Цена"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="440dp"
+        android:text="Цена"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="600dp"
+        android:text="Цена"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="296dp"
+        android:text="Количество"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="460dp"
+        android:text="Количество"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="620dp"
+        android:text="Количество"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="316dp"
+        android:text="Лимит"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="480dp"
+        android:text="Лимит"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="640dp"
+        android:text="Лимит"
+        android:textColor="#5c5c5e"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="355dp"
+        android:layout_marginTop="402dp"
+        android:text="1345"
+        android:textColor="@color/black"
+        android:textSize="35px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="355dp"
+        android:layout_marginTop="567dp"
+        android:text="1345"
+        android:textColor="@color/black"
+        android:textSize="35px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="276dp"
+        android:text="23 400 ₽"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="440dp"
+        android:text="23 400 ₽"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="600dp"
+        android:text="23 400 ₽"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="316dp"
+        android:text="5 000,00 - 201 463,22 ₽"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="480dp"
+        android:text="5 000,00 - 201 463,22 ₽"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="640dp"
+        android:text="5 000,00 - 201 463,22 ₽"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="296dp"
+        android:text="8,58578604"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="460dp"
+        android:text="8,58578604"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="620dp"
+        android:text="8,58578604"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="408dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middlePanel"
+        app:layout_constraintVertical_bias="0.861">
+
+        <RelativeLayout
+            android:id="@+id/walletPanel"
+            android:layout_width="57dp"
+            android:layout_height="66dp"
+            android:background="@drawable/element_wallet"
+            android:elevation="@dimen/shadow_under_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageWallet"
+                android:layout_width="40dp"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/indentation_inside_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wallet" />
+
+            <TextView
+                android:id="@+id/wallet"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_below="@id/imageWallet"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/indentation_between_image_and_text"
+                android:text="   Кошелек"
+                android:textSize="35px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/marketPanel"
+            android:layout_width="47dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="27dp"
+            android:layout_toEndOf="@id/walletPanel"
+            android:background="@drawable/for_elements_of_bottom_panel"
+            android:elevation="@dimen/shadow_under_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/walletPanel"
+            tools:ignore="UnknownId">
+
+            <ImageView
+                android:id="@+id/imageMarket"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/for_elements_of_bottom_panel"
+                android:padding="@dimen/indentation_inside_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/market" />
+
+            <TextView
+                android:id="@+id/market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageMarket"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="@dimen/indentation_between_image_and_text"
+                android:text="Рынок"
+                android:textSize="35px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/browserPanel"
+            android:layout_width="49dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/marketPanel"
+            android:background="@drawable/for_elements_of_bottom_panel"
+            android:elevation="@dimen/shadow_under_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/marketPanel">
+
+            <ImageView
+                android:id="@+id/imageBrowser"
+                android:layout_width="36dp"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/for_elements_of_bottom_panel"
+                android:padding="@dimen/indentation_inside_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/browser" />
+
+            <TextView
+                android:id="@+id/browser"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@id/imageBrowser"
+                android:layout_marginTop="9dp"
+                android:paddingBottom="@dimen/indentation_between_image_and_text"
+                android:text="  Браузер"
+                android:textSize="35px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/exchangePanel"
+            android:layout_width="51dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="36dp"
+            android:layout_toEndOf="@id/browserPanel"
+            android:background="@drawable/for_elements_of_bottom_panel"
+            android:elevation="@dimen/shadow_under_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/browserPanel">
+
+            <ImageView
+                android:id="@+id/imageExchange"
+                android:layout_width="25dp"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/for_elements_of_bottom_panel"
+                android:padding="@dimen/indentation_inside_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/exchange" />
+
+            <TextView
+                android:id="@+id/exchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageExchange"
+                android:layout_marginTop="9dp"
+                android:paddingBottom="@dimen/indentation_between_image_and_text"
+                android:text="    Обмен"
+                android:textSize="35px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settingsPanel"
+            android:layout_width="57dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="23dp"
+            android:layout_toEndOf="@id/exchangePanel"
+            android:background="@drawable/for_elements_of_bottom_panel"
+            android:elevation="@dimen/shadow_under_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/exchangePanel">
+
+            <ImageView
+                android:id="@+id/imageSettings"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/for_elements_of_bottom_panel"
+                android:padding="@dimen/indentation_inside_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_below="@id/imageSettings"
+                android:layout_marginTop="14dp"
+                android:paddingBottom="@dimen/indentation_between_image_and_text"
+                android:text="Настройки"
+                android:textSize="35px" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

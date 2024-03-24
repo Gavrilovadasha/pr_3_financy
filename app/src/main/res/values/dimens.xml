@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heightImage" />
+    <dimen name="shadow_under_image" />
+    <dimen name="width_element_bottom_panel" />
+    <dimen name="height_element_bottom_panel" />
+    <dimen name="indentation_inside_image" />
+    <dimen name="indentation_between_image_and_text" />
+    <dimen name="indentation_from_another_image" />
+</resources>
